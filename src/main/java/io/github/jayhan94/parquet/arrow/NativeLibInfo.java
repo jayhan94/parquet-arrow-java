@@ -1,4 +1,4 @@
-package io.github.jayhan94;
+package io.github.jayhan94.parquet.arrow;
 
 import java.net.URISyntaxException;
 import java.nio.file.Path;

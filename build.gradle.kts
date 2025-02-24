@@ -8,7 +8,6 @@
 plugins {
     // Apply the java-library plugin for API and implementation separation.
     `java-library`
-    id("com.github.johnrengelman.shadow") version "8.0.0"
 }
 
 repositories {
@@ -43,6 +42,7 @@ java {
 tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
+    jvmArgs("--enable-native-access=ALL-UNNAMED")
 }
 
 tasks.named("processResources") {
